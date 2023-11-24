@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="video-wrapper">
+        <video autoplay 1000s>
+            <source src="Video/bg_video.mp4" type="video/mp4"/>
+        </video>
+
+        <div id="converter">
+            <h1>Temperature Converter</h1>
+            <br>
+
+            <section>
+                <label for="temperature">Enter the temperature:</label>
+                <input type="text" id="temperature" placeholder="Enter temperature" required>
+            
+                <label for="unit">Select unit:</label>
+                <select>
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                <br>
+
+                <label for="unit">Convert to Unit:</label>
+                <select id="unit">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </section>
+        
+            <br>
+            <button id="convert">Convert</button>
+            <br>
+
+            <div id="result"></div>
+        </div>
+    </div>
+</body>
+<script src="Script.js"></script>
+</html>
